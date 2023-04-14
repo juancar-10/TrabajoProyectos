@@ -1,0 +1,41 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+    position: relative;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+  
+  nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  nav .dropdown-menu li {
+    display: block;
+    width: 100%;
+  }
+  
+  nav a:hover, nav a:focus {
+    background: #f8f8f8;
+  }
+  

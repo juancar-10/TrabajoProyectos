@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página protegida con contraseña</title>
+	<link rel="stylesheet" href="../Estilo.css">
+</head>
+<body>
+	<h1> Plastic Rangers </h1>
+	<nav class="menu">
+		<a href="../Inicio.html">Inicio</a>
+		<a href="../Nosotros.html">Nosotros</a>
+		<a href="../Premios.html">Premios</a>
+        <li class="desplegable" style="list-style: none;">
+            <a href="../Mi_perfil.html" class="principal">MI PERFIL</a>
+            <ul class="desplegable-dos">
+                <li><a href="Puntos.html">Puntos</a></li>
+                <li><a href="Servicio_al_cliente.html">Servicio al cliente</a></li>
+                <li><a href="Canjeo.html">Canjeo</a></li>
+                <li><a href="registro.html">REGISTRO</a></li>
+            </ul>
+        </li>
+	</nav>
+    <div class="intro">
+		<h2>Por favor, ingresa tus credenciales para acceder:</h2>
+		<button onclick="mostrarFormulario()">MOSTRAR</button>
+    </div>
+	<!-- Ventana emergente para ingresar credenciales -->
+
+    <div class="registro" id="formulario" style="display: none;">
+        <form action="https://httpbin.org/post" class="formulario" method="post">
+            <div>
+                <h2 style="font-family: Arial, sans-serif;">Formulario</h2>
+            </div>
+            <input type="text" id="usuario" class="registroi" placeholder="Escriba su nombre">
+            <input type="password" id="contrasena" class="registroi" placeholder="Contraseña">
+			<button type="button" onclick="mostrarContraseña()">Mostrar contraseña</button>
+			<br>
+			<br>
+			<br>
+            <input type="button" value="Ingresar" class="enter" onclick="verificarCredenciales()">
+        </form>
+    </div>
+
+	<!-- Script para mostrar y verificar credenciales -->
+	<script>
+		function mostrarFormulario() {
+			document.getElementById("formulario").style.display = "block";
+		}
+		function mostrarContraseña() {
+		var x = document.getElementById("contrasena");
+		if (x.type === "password") {
+			x.type = "text";
+		} else {
+			x.type = "password";
+		}
+		}
+		function verificarCredenciales() {
+			var usuario = document.getElementById("usuario").value;
+			var contrasena = document.getElementById("contrasena").value;
+			// Verificar credenciales (ejemplo con usuario "admin" y contraseña "1234")
+			if (usuario === "admin" && contrasena === "1234") {
+				window.location.href = "Puntos.html"; // redirigir a la página privada
+			} else {
+				alert("Credenciales incorrectas. Intenta de nuevo.");
+			}
+		}
+	</script>
+</body>
+</html>

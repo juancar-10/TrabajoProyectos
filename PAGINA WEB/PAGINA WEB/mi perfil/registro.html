@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menú interactivo</title>
+    <link rel="stylesheet" href="../Estilo.css">
+</head>
+<body>
+    <h1> Plastic Rangers </h1>
+	<nav class="menu">
+		<a href="../Inicio.html">Inicio</a>
+		<a href="../Nosotros.html">Nosotros</a>
+		<a href="../Premios.html">Premios</a>
+        <li class="desplegable" style="list-style: none;">
+            <a href="../Mi_perfil.html" class="principal">MI PERFIL</a>
+            <ul class="desplegable-dos">
+                <li><a href="Prueba.html">Puntos</a></li>
+                <li><a href="Servicio_al_cliente.html">Servicio al cliente</a></li>
+                <li><a href="registro.html"><STRONG>REGISTRO</STRONG></a></li>
+            </ul>
+        </li>
+	</nav>
+    <div class="registro">
+        <form action="https://httpbin.org/post" class="formulario" method="post">
+            <div>
+                <h2 style="font-family: Arial, sans-serif;">Formulario</h2>
+            </div>
+            <input type="text" id="name" class="registroi" placeholder="Escriba su nombre">
+            <input type="email" id="email" class="registroi" placeholder="Escriba su email">
+            <input type="number" id="number" class="registroi" placeholder="Telefono">
+            <input type="button" value="Ingresar" class="enter" onclick="enviar()">
+        </form>
+    </div>
+
+	<footer class="pie">
+        <p class="Contacto">Contacta con nosotros: <a href="mailto:plasticrangersrecyclable@gmail.com" class="enlace">plasticrangers@gmail.com</a></p>
+        <p class="Copyright">Copyright © 2023 Plastic Ranger Inc. Todos los derechos reservados.</p>
+        <nav class="lista">
+            <ul>
+                
+                <li>Politica de privacidad</li>
+                <li>Uso de cookies</li>
+                <li>Condiciones de Uso</li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        function enviar() {
+            window.location.href ="../Inicio.html";
+    }
+</script>
+</body>
+</html>

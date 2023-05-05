@@ -78,6 +78,30 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCanjeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCanjeo.Designer.cs">
+      <DependentUpon>FormCanjeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConversión.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConversión.Designer.cs">
+      <DependentUpon>FormConversión.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNoticias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNoticias.Designer.cs">
+      <DependentUpon>FormNoticias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -85,6 +109,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCanjeo.resx">
+      <DependentUpon>FormCanjeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConversión.resx">
+      <DependentUpon>FormConversión.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNoticias.resx">
+      <DependentUpon>FormNoticias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +130,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
@@ -127,6 +164,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\ryanair.jpg" />
+    <None Include="Resources\warner.jpg" />
+    <None Include="Resources\mercadona.jpg" />
+    <None Include="Resources\kinepolisperf.jpg" />
+    <None Include="Resources\kinepolis.png" />
+    <None Include="Resources\plastico_mar3.jpg" />
+    <None Include="Resources\plastico_mar2.jpg" />
+    <None Include="Resources\log-out-regular-241.png" />
+    <None Include="Resources\log-out-regular-24.png" />
+    <None Include="Resources\Logo.PNG" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
